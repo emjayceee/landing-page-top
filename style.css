@@ -13,26 +13,25 @@
     font-family: "Roboto", sans-serif;
 }
 
-body {
+.whole-container {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
-    align-items: space-between;
+    height: 100vh;
 }
-
-.content {
-    display:flex;
-    flex-direction: column;
-}
-
 
 .header, .part-one {
     background-color: var(--heroNfooter);
 }
 
+.content {
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .part-three {
     background-color: var(--hero-secondaryText);
-    display: flex;
+    /* display: flex; */
     font-weight: 100;
     font-style: italic;
     color: var(--heroNfooter);
@@ -59,7 +58,7 @@ span {
 
 .call-to-action {
     font-weight: 800;
-    padding:
+    padding:20px;
 }
 
 .footer {
@@ -68,6 +67,6 @@ span {
     font-size: 12px;
     padding: 24px;
     display: flex;
+    margin-top: auto;
     justify-content: center;
-    align-items:center;
 }
