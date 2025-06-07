@@ -16,21 +16,73 @@
 body {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
-    align-items: space-between;
+    /* flex: 1 1 auto; */
+    /* justify-content: space-around; */
+    min-height: 100vh;
 }
 
 .content {
     display:flex;
     flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
 }
-
 
 .header, .part-one {
     background-color: var(--heroNfooter);
+    color: var(--heroMainText);
 }
 
-.part-three {
+.header > p, .left-text > h3 {
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+}
+
+ li {
+    display: inline;
+    list-style: none;
+    padding: 8px;
+    font-size: 18px;
+ }
+ .part-one { /* Content one */
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 6rem;
+    gap: 12px;
+ }
+ 
+ .left-text {
+    display:flex-flow;
+    gap: 12px;
+ }
+
+ .left-text > button {
+    background-color: var(--button-color);
+    padding: 4px 16px;
+    border-radius: 6px;
+    border-style: none;
+    color: var(--heroMainText)
+ }
+
+ .img-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    min-height:150px;
+    background-color: gray;
+    padding:0 1rem;
+ }
+
+.part-three { /* Content three */
     background-color: var(--hero-secondaryText);
     display: flex;
     font-weight: 100;
@@ -38,6 +90,11 @@ body {
     color: var(--heroNfooter);
     margin: 0;
     padding:10%;
+}
+
+.part-four { /* Content four */
+    display: flex;
+    padding: 10%;
 }
 
 span {
@@ -52,14 +109,16 @@ span {
 .blue-box {
     background-color: var(--button-color);
     border-radius: 12px;
-    padding: 10%;
-    display: flex;
-    color: var(--hero-secondaryText)
+    padding: 5%;
+    gap:12px;
+    display:inline-block;
+    color: var(--hero-secondaryText);
+    width: 100%;
+    /* flex-grow: 1; */
 }
 
 .call-to-action {
     font-weight: 800;
-    padding:
 }
 
 .footer {
